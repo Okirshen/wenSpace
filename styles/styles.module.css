@@ -1,0 +1,90 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1rem;
+	text-align: left;
+	color: inherit;
+	text-decoration: none;
+	border: 1px solid #eaeaea;
+	border-radius: 10px;
+	transition: border-color 0.25s ease;
+	width: max(56%, 50rem);
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	height: 15rem;
+}
+
+.card:hover {
+	border-color: var(--tint);
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cardContainer {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.img {
+	width: 50%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.1rem 3rem;
+	color: white;
+	background-color: var(--secondery);
+}
+
+.githubBtn {
+	color: white;
+
+	border-radius: 50%;
+	padding: 0.3rem;
+	background-color: var(--secondery);
+	border: none;
+	transition: color 100ms linear;
+}
+
+.githubBtn:hover {
+	color: hsl(231, 49%, 40%);
+}
+
+.footer {
+	width: 100%;
+	padding: 2rem;
+	color: white;
+
+	background-color: var(--secondery);
+}
+
+.link {
+	color: var(--tint);
+	text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+	.card {
+		height: 35rem;
+		width: max(75%, 30rem);
+		flex-direction: column;
+	}
+
+	.img {
+		width: 100%;
+		height: 20rem;
+	}
+}
